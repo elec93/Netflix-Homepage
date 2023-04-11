@@ -1,0 +1,155 @@
+/*Reset*/
+@font-face {
+  font-family: NetflixSans;
+  src: url("NetflixSans-Regular.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: NetflixSans,
+}
+
+/*Font Netflix Homepage*/
+$h1-nav-font-size: 3.125rem;
+$h1-font-size: 2.5rem;
+$h2-font-size: 1.625rem;
+$h3-font-size: 1.438rem;
+
+/*Palette Netflix Homepage*/
+$white: white;
+$black: #000;
+$gray-divider: #222;
+$gray-faq-bg: #303030;
+$gray-footer-links: #737373;
+$red: #e50914;
+
+
+@font-face {
+  font-family: NetflixSans;
+  src: url("NetflixSans-Regular.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: NetflixSans;
+}
+
+
+.faq {
+	background-color: $black;
+	color: $white;
+}
+div.faq {
+	form {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr max-content;
+		margin: 20px 100px 0;
+		row-gap: 15px;
+	}
+	input {
+		padding: 15px 10px;
+		font-size: 1.2rem;
+		width: 100%;
+		~ {
+			span {
+				position: absolute;
+				left: 12px;
+				top: 19px;
+				z-index: 3;
+				color: #aaa;
+				transition: all 0.15s ease;
+				pointer-events: none;
+				font-size: 16px;
+			}
+		}
+		&:focus {
+			padding-top: 19px;
+			padding-bottom: 11px;
+			~ {
+				span {
+					top: 4px;
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+	button {
+		font-size: $h2-font-size;
+		padding: 12px 26px;
+		background-color: $red;
+		border-radius: 0;
+		color: white;
+		border: 0;
+	}
+}
+div.faq {
+	padding: 70px 30px;
+	h1 {
+		font-size: 2.5rem;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	h3 {
+		font-weight: normal;
+    font-size: 1.2rem;
+    margin-top: 70px;
+    text-align: center;
+	}
+}
+div.questions {
+	max-width: 775px;
+	margin: 0 auto;
+	font-size: $h2-font-size;
+}
+div.question {
+	position: relative;
+	background-color: $gray-faq-bg;
+	margin-bottom: 8px;
+	width: 100%;
+	svg {
+		width: 30px;
+		height: 30px;
+		right: 30px;
+		top: 20px;
+		position: absolute;
+		transform: rotate(90deg);
+		transition: all 0.2s ease;
+	}
+	.header {
+		display: block;
+		padding: 20px 30px;
+		border-bottom: 1px solid $black;
+		cursor: pointer;
+	}
+	div.answer {
+		padding: 0 30px;
+		max-height: 0;
+		overflow: hidden;
+		transition: all 0.2s ease;
+	a {
+    color: $white;
+  }
+  }
+  
+	input[type=checkbox] {
+		display: none;
+		&:checked {
+			~ {
+				div.answer {
+					padding: 30px 30px;
+					max-height: 600px;
+				}
+				.header {
+					svg {
+						transform: rotate(45deg);
+					}
+				}
+			}
+		}
+	}
+}

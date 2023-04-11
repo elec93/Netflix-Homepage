@@ -1,0 +1,218 @@
+/*----third-section------------*/
+@import 'third-section-variabiles';
+@font-face {
+    font-family: NetflixSans;
+    src: url(third-section-files/NetflixSans-Regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: NetflixSans;
+    letter-spacing: 0 !important;
+}
+
+.third-section{
+    display: flex;
+    
+}
+.card-third-section {
+    background-color: black;
+    border-bottom: 8px solid $gray-divider;
+    color: $white;
+    margin-bottom: 0;
+    padding: 50px 5%;
+    position: relative;
+}
+
+.card-third-section .third-card-container,
+.card-third-section .fourth-card-container,
+ .second-card-container, .first-card-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.card-third-section .third-section h1 {
+    font-weight: 800;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.card-third-section .third-section h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.card-third-section .third-card-container h1,
+.card-third-section .fourth-card-container h1 {
+    color: white;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.card-third-section .third-card-container h2,
+.card-third-section .fourth-card-container h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.third-section img {
+    border: 0;
+    height: auto;
+    max-width: 500px;
+}
+
+.third-card-img {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.third-card-text {
+    flex: 0 1 auto;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    width: 52%;
+    z-index: 3;
+}
+
+/*-third-section-fourth-card-*/
+.fourth-card-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.fourth-card-text {
+    margin-left: 30px;
+    height: 100%;
+    width: 52%;
+}
+
+.fourth-card-img-container {
+    position: relative;
+    right: 80px;
+}
+
+.card-third-section .fourth-card-animation-comtainer {
+    font-size: 16px;
+    background: $black;
+    border: 2px solid hsla(0, 0%, 100%, .25);
+    border-radius: 0.75em;
+    box-shadow: 0 0 2em 0 $black;
+
+    margin: 0 auto;
+    min-width: 15em;
+    padding: 0.5em 0.75em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    width: 20rem;
+}
+
+img[alt="third-section-stranger-things"] {
+    height: 4.5em;
+    max-width: 100%;
+}
+
+.card-third-section p.download {
+    color: rgb(0, 102, 255);
+}
+
+.card-third-section img[alt="download"] {
+    max-height: 60px;
+}
+/*----third-section--END-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-third-section-fourth-card-*/
+.fourth-card-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.fourth-card-text {
+    margin-left: 30px;
+    height: 100%;
+    width: 52%;
+}
+
+.fourth-card-img-container {
+    position: relative;
+    right: 80px;
+}
+
+.card-third-section .fourth-card-animation-comtainer {
+    font-size: 16px;
+    background: $black;
+    border: 2px solid hsla(0, 0%, 100%, .25);
+    border-radius: 0.75em;
+    box-shadow: 0 0 2em 0 $black;
+
+    margin: 0 auto;
+    min-width: 15em;
+    padding: 0.5em 0.75em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    width: 20rem;
+}
+
+img[alt="third-section-stranger-things"] {
+    height: 4.5em;
+    max-width: 100%;
+}
+
+.card-third-section p.download {
+    color: rgb(0, 102, 255);
+}
+
+.card-third-section img[alt="download"] {
+    max-height: 60px;
+}
+/*----third-section--END-----------*/
+
+/*# sourceMappingURL=style.scss.map */

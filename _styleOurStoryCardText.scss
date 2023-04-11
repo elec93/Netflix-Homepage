@@ -1,0 +1,63 @@
+@use 'sass:color';
+
+main {
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .main-paragraph {
+            display: inline-block;
+            color: $white;
+            text-align: center;
+            font-weight: lighter;
+
+            h1 {
+                font-size: $h1-font-size;
+            }
+
+            h2 {
+                font-size: $h2-font-size;
+            }
+
+            h3 {
+                font-size: $h3-font-size;
+            }
+        }
+    }
+
+    .email-form {
+        .email-textarea {
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+
+            input {
+                padding: 8px 22px;
+                font-size: $h2-font-size;
+                min-height: 100%;
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+            }
+
+            .red-btn {
+                background-color: $red;
+                color: $white;
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+                border: black;
+                padding: 17px 44px;
+                font-size: 35px;
+                text-align: center;
+                cursor: pointer;
+                font-weight: 400;
+                height: 100%;
+
+                &:hover {
+                    background-color: color.adjust($red, $lightness: 5%);
+                }
+            }
+        }
+    }
+}
